@@ -27,6 +27,9 @@ trigger:
   - !input 'entity_1'
   - !input 'entity_2'
   - !input 'entity_3'
+  to:
+    - 'on'
+    - 'off'
 condition:
 - condition: or
   conditions:
