@@ -18,9 +18,9 @@ variables:
   entity_2: !input 'entity_2'
 trigger:
 - platform: state
-  entity_id: !input 'entity_1'
-- platform: state
-  entity_id: !input 'entity_2'
+  entity_id: 
+  - !input 'entity_1'
+  - !input 'entity_2'
 condition: '{{ trigger.to_state.state == "on" }}'
 action:
 - service: homeassistant.turn_off
