@@ -7,12 +7,12 @@ blueprint:
       name: First entity
       selector:
         entity:
-          multiple: true
+          multiple: false
     entity_2:
       name: Second entity
       selector:
         entity:
-          multiple: true
+          multiple: false
 mode: single
 max_exceeded: silent
 variables:
